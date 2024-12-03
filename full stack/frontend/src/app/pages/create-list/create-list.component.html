@@ -1,0 +1,15 @@
+<div class="centered-content">
+  <div class="container">
+    <h1 class="title">
+      Create New List
+    </h1>
+
+    <input #inputList class="input is-light is-medium has-background-light" type="text"
+      placeholder="Enter List Name ...">
+    <div class="buttons field is-right">
+      <button class="button button is-primary is-light is-medium " routerLink='/'>Cancel</button>
+      <button class="button is-primary is-medium  has-text-white"
+        (click)="createNewList(inputList.value)">Create</button>
+    </div>
+  </div>
+</div>
